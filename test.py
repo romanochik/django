@@ -11,6 +11,7 @@ pythom manage.py runserver
     git branch -M main
     git remote add origin https://github.com/romanochik/django.git
     git push -u origin main
+
 3. Диспечер учётных данных - удалить чужую учётку
 
 '''
