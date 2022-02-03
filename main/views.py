@@ -1,6 +1,5 @@
 from django.shortcuts import render
-# Creaet your views here
-#from django.http import HttpRespsonse
+from .models import  Country
 
 
 def index(request):
@@ -11,3 +10,10 @@ def news(request):
 
 def bebrik(request):
     return render(request, 'main/bebrik.html')
+
+def lolo(request):
+    return render(request, 'main/lolo.html')
+
+def blob(request):
+    country = Country.objects.all()
+    return render(request, 'main/blob.html', {'country': country} )
